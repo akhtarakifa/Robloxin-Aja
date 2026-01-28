@@ -1,0 +1,249 @@
+/* ================================
+   AVATAR PAGE
+   ================================ */
+.avatar-page {
+    padding: 3rem 0;
+    min-height: calc(100vh - 400px);
+}
+
+.page-title {
+    font-size: 3rem;
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.page-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.avatar-showcase {
+    margin-bottom: 4rem;
+}
+
+.avatar-card {
+    background: white;
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: var(--shadow-lg);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: center;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.avatar-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f5e6ff 100%);
+    border-radius: 20px;
+}
+
+.roblox-character {
+    position: relative;
+    width: 180px;
+    height: 280px;
+    animation: characterBounce 2s ease-in-out infinite;
+}
+
+@keyframes characterBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.character-head {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #ffe5e5 0%, #ffd1d1 100%);
+    border-radius: 12px;
+    margin: 0 auto 10px;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+}
+
+.character-body {
+    width: 100px;
+    height: 110px;
+    background: white;
+    border-radius: 12px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hoodie-logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.character-arms {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arm {
+    width: 35px;
+    height: 80px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.arm.left {
+    margin-left: -15px;
+}
+
+.arm.right {
+    margin-right: -15px;
+}
+
+.character-legs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.leg {
+    width: 40px;
+    height: 80px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.avatar-description h3 {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.avatar-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.items-section {
+    margin-bottom: 4rem;
+}
+
+.items-section h2 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.item-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.item-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.item-card h4 {
+    font-size: 1.3rem;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.item-card p {
+    color: #888;
+    margin: 0;
+}
+
+.style-tips {
+    margin-top: 3rem;
+}
+
+.style-tips h2 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.tip-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    border-radius: 16px;
+    color: white;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.tip-number {
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: #667eea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.tip-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.tip-card p {
+    line-height: 1.6;
+    margin: 0;
+}

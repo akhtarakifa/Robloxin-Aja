@@ -1,0 +1,97 @@
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    background: linear-gradient(180deg, #335FFE 0%, #00A6FF 100%);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar-close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.sidebar-close button {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-close button:hover {
+    transform: scale(1.1);
+}
+
+.sidebar-content {
+    color: white;
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.sidebar-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.sidebar-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.sidebar-content ul {
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.sidebar-content li {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: white;
+    line-height: 1.7;
+}
+
+/* Overlay/Backdrop */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.sidebar-overlay.active {
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: auto;
+}
