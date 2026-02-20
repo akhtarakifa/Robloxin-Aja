@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const hasIncompleteCard = cardRefs.some(
-    (card) => !card.image || !card.title || !card.description
+    (card) => !card.image || !card.title || !card.description,
   );
 
   if (hasIncompleteCard) {
@@ -193,7 +193,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   prevBtn.addEventListener("click", () => {
-    currentSetIndex = (currentSetIndex - 1 + gallerySets.length) % gallerySets.length;
+    currentSetIndex =
+      (currentSetIndex - 1 + gallerySets.length) % gallerySets.length;
     renderSet(currentSetIndex);
   });
 
