@@ -1,73 +1,91 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulir Kontak - Robloxin Aja</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/kontak.css">
-    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/kontak.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
 </head>
+
 <body>
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="container">
-        <div class="nav-left">
-            <div class="nav-logo">
-                <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja" />
+                </div>
+                <div class="nav-brand">
+                    <div class="brand-text">Robloxin</div>
+                    <div class="brand-text-alt">Aja</div>
+                </div>
             </div>
-            <div class="nav-brand">
-                <div class="brand-text">Robloxin</div>
-                <div class="brand-text-alt">Aja</div>
-            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+                <li>
+                    <a href="rekomendasi.html" class="nav-link">Rekomendasi Game</a>
+                </li>
+                <li><a href="avatar.html" class="nav-link">Avatar & Item</a></li>
+                <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+                <li>
+                    <a href="kontak.html" class="nav-link active">Formulir Kontak</a>
+                </li>
+            </ul>
+            <button class="sidebar-toggle" onclick="toggleSidebar()">
+                <img src="assets/Roblox-Sidebar.svg" alt="Menu" />
+            </button>
         </div>
-        <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link">Beranda</a></li>
-            <li><a href="tentang.html" class="nav-link">Tentang</a></li>
-            <li><a href="rekomendasi.html" class="nav-link">Rekomendasi Game</a></li>
-            <li><a href="avatar.html" class="nav-link">Avatar & Item</a></li>
-            <li><a href="galeri.html" class="nav-link">Galeri</a></li>
-            <li><a href="kontak.html" class="nav-link active">Formulir Kontak</a></li>
-        </ul>
-        <button class="sidebar-toggle" onclick="toggleSidebar()">
-            <img src="assets/Roblox-Sidebar.svg" alt="Menu">
-        </button>
-    </div>
-</nav>
+    </nav>
 
     <!-- Main Content -->
     <main class="kontak-page">
         <div class="container">
             <div class="kontak-wrapper">
                 <div class="kontak-info">
-                    <h1>Hubungi Kami</h1>
-                    <p class="intro-text">Punya saran, pertanyaan, atau ingin memberi masukan tentang website Robloxin Aja?</p>
-                    <p>Silakan isi formulir di samping ini, kami senang mendengar pendapatmu!</p>
-                    
+                    <h1 class="kontak-text">Hubungi Kami</h1>
+                    <p class="intro-text">
+                        Punya saran, pertanyaan, atau ingin memberi masukan tentang
+                        website Robloxin Aja?
+                    </p>
+                    <p class="intro-text">
+                        Silakan isi formulir di samping ini, kami senang mendengar
+                        pendapatmu!
+                    </p>
+
                     <div class="contact-details">
-                        <p class="detail-intro">Atau hubungi kami lewat email, alamat, dan nomor telepon yang tersedia di bawah ini:</p>
-                        
+                        <p class="detail-intro">
+                            Atau hubungi kami lewat email, alamat, dan nomor telepon yang
+                            tersedia di bawah ini:
+                        </p>
+
                         <div class="detail-item">
                             <div class="detail-label">Email</div>
                             <div class="detail-value">
                                 <a href="mailto:robloxinaja@gmail.com">robloxinaja@gmail.com</a>
                             </div>
                         </div>
-                        
+
                         <div class="detail-item">
                             <div class="detail-label">Nomor Telepon</div>
                             <div class="detail-value">
                                 <a href="tel:+628123456789">+62 812-3456-7891</a>
                             </div>
                         </div>
-                        
+
                         <div class="detail-item">
                             <div class="detail-label">Alamat</div>
                             <div class="detail-value">
-                                Jalan Singosari Raya No. 15, Kelurahan Wonodri, Kecamatan Semarang Selatan, Kota Semarang, Jawa Tengah
+                                Jalan Singosari Raya No. 15, Kelurahan Wonodri, Kecamatan
+                                Semarang Selatan, Kota Semarang, Jawa Tengah
                             </div>
                         </div>
                     </div>
@@ -78,19 +96,22 @@
                     <form class="kontak-form" id="contactForm">
                         <div class="form-group">
                             <label for="nama">Nama</label>
-                            <input type="text" id="nama" name="nama" placeholder="Tulis nama kamu di sini..." required>
+                            <input type="text" id="nama" name="nama" placeholder="Tulis nama kamu di sini..."
+                                required />
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Tulis email kamu di sini..." required>
+                            <input type="email" id="email" name="email" placeholder="Tulis email kamu di sini..."
+                                required />
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="pesan">Pesan</label>
-                            <textarea id="pesan" name="pesan" rows="6" placeholder="Tulis pesan kamu di sini..." required></textarea>
+                            <textarea type="text" id="pesan" name="pesan" rows="6"
+                                placeholder="Tulis pesan kamu di sini..." required></textarea>
                         </div>
-                        
+
                         <button type="submit" class="submit-btn">Kirim Pesan</button>
                     </form>
                 </div>
@@ -104,7 +125,7 @@
             <div class="footer-content">
                 <div class="footer-left">
                     <div class="footer-logo">
-                        <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja">
+                        <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja" />
                     </div>
                     <div class="footer-brand">
                         <span class="brand-text">Robloxin</span>
@@ -130,36 +151,57 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Robloxin Aja. Semua hak cipta dan merek dagang terkait Roblox adalah milik Roblox Corporation. Konten pada website ini digunakan hanya untuk tujuan pembelajaran.</p>
+                <p>
+                    © 2025 Robloxin Aja. Semua hak cipta dan merek dagang terkait Roblox
+                    adalah milik Roblox Corporation. Konten pada website ini digunakan
+                    hanya untuk tujuan pembelajaran.
+                </p>
             </div>
         </div>
     </footer>
 
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Terima kasih! Pesan Anda telah terkirim. Kami akan segera menghubungi Anda.');
-            this.reset();
-        });
+        document
+            .getElementById("contactForm")
+            .addEventListener("submit", function (e) {
+                e.preventDefault();
+                alert(
+                    "Terima kasih! Pesan Anda telah terkirim. Kami akan segera menghubungi Anda.",
+                );
+                this.reset();
+            });
     </script>
 
-<!-- Sidebar -->
-<div class="sidebar-overlay"></div>
-<div class="sidebar">
-    <div class="sidebar-close">
-        <button onclick="toggleSidebar()">✕</button>
+    <!-- Sidebar -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar">
+        <div class="sidebar-close">
+            <button onclick="toggleSidebar()">✕</button>
+        </div>
+        <div class="sidebar-content">
+            <h1>Update Terbaru Roblox</h1>
+            <h2>Update Terbaru Game Fish It!</h2>
+            <ul>
+                <li>
+                    “Ancient Jungle” update — ditambahkan lokasi baru Ancient Jungle
+                    yang memungkinkan pemain menangkap ikan langka dan menemukan rahasia
+                    baru 🔥.
+                </li>
+                <li>
+                    Event Halloween akan hadir pada 19 Oktober 2025 (WIB sekitar 05:00)
+                    dengan kosmetik bertema Halloween, kapal baru, dan skin pancing
+                    eksklusif 🎃.
+                </li>
+                <li>
+                    Versi update sebelumnya menambahkan “new secret fish”, “updated
+                    quests”, dan “fresh redeem codes” 🐠.
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="sidebar-content">
-        <h1>Update Terbaru Roblox</h1>
-        <h2>Update Terbaru Game Fish It!</h2>
-        <ul>
-            <li>“Ancient Jungle” update — ditambahkan lokasi baru Ancient Jungle yang memungkinkan pemain menangkap ikan langka dan menemukan rahasia baru 🔥.</li>
-            <li>Event Halloween akan hadir pada 19 Oktober 2025 (WIB sekitar 05:00) dengan kosmetik bertema Halloween, kapal baru, dan skin pancing eksklusif 🎃.</li>
-            <li>Versi update sebelumnya menambahkan “new secret fish”, “updated quests”, dan “fresh redeem codes” 🐠.</li>
-        </ul>
-    </div>
-</div>
 
-<script src="sidebar.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/kontak.js"></script>
 </body>
+
 </html>

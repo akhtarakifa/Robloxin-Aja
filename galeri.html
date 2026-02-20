@@ -1,128 +1,129 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeri - Robloxin Aja</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/galeri.css">
-    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/galeri.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
 </head>
+
 <body>
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="container">
-        <div class="nav-left">
-            <div class="nav-logo">
-                <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja" />
+                </div>
+                <div class="nav-brand">
+                    <div class="brand-text">Robloxin</div>
+                    <div class="brand-text-alt">Aja</div>
+                </div>
             </div>
-            <div class="nav-brand">
-                <div class="brand-text">Robloxin</div>
-                <div class="brand-text-alt">Aja</div>
-            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+                <li>
+                    <a href="rekomendasi.html" class="nav-link">Rekomendasi Game</a>
+                </li>
+                <li><a href="avatar.html" class="nav-link">Avatar & Item</a></li>
+                <li><a href="galeri.html" class="nav-link active">Galeri</a></li>
+                <li><a href="kontak.html" class="nav-link">Formulir Kontak</a></li>
+            </ul>
+            <button class="sidebar-toggle" onclick="toggleSidebar()">
+                <img src="assets/Roblox-Sidebar.svg" alt="Menu" />
+            </button>
         </div>
-        <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link">Beranda</a></li>
-            <li><a href="tentang.html" class="nav-link">Tentang</a></li>
-            <li><a href="rekomendasi.html" class="nav-link">Rekomendasi Game</a></li>
-            <li><a href="avatar.html" class="nav-link">Avatar & Item</a></li>
-            <li><a href="galeri.html" class="nav-link active">Galeri</a></li>
-            <li><a href="kontak.html" class="nav-link">Formulir Kontak</a></li>
-        </ul>
-        <button class="sidebar-toggle" onclick="toggleSidebar()">
-            <img src="assets/Roblox-Sidebar.svg" alt="Menu">
-        </button>
-    </div>
-</nav>
+    </nav>
 
     <!-- Main Content -->
     <main class="galeri-page">
         <div class="container">
-
             <div class="gallery-wrapper">
-                <button class="gallery-nav gallery-nav-prev" onclick="scrollGallery(-1)">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="19" fill="black" stroke="white" stroke-width="2"/>
-                        <path d="M24 14L16 20L24 26" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-
                 <div class="gallery-grid">
                     <!-- Gallery Item 1 -->
                     <div class="gallery-item">
                         <div class="gallery-image">
-                            <img src="assets/Galeri/Galeri1.png" alt="Petualangan di Brookhaven">
+                            <img alt="" />
                         </div>
                         <div class="gallery-caption">
-                            <h4>Petualangan Sunset</h4>
-                            <p>Momen indah di pantai Roblox</p>
+                            <h4></h4>
+                            <p></p>
                         </div>
                     </div>
 
                     <!-- Gallery Item 2 -->
                     <div class="gallery-item">
                         <div class="gallery-image">
-                            <img src="assets/Galeri/Galeri2.png" alt="Air Terjun">
+                            <img alt="" />
                         </div>
                         <div class="gallery-caption">
-                            <h4>Neon City Exploration</h4>
-                            <p>Petualangan di kota futuristik</p>
+                            <h4></h4>
+                            <p></p>
                         </div>
                     </div>
 
                     <!-- Gallery Item 3 -->
                     <div class="gallery-item">
                         <div class="gallery-image">
-                            <img src="assets/Galeri/Galeri3.png">
+                            <img alt="" />
                         </div>
                         <div class="gallery-caption">
-                            <h4>Fish It! Adventure</h4>
-                            <p>Menangkap ikan langka</p>
+                            <h4></h4>
+                            <p></p>
                         </div>
                     </div>
 
                     <!-- Gallery Item 4 -->
                     <div class="gallery-item">
                         <div class="gallery-image">
-                            <img src="assets/Galeri/Galeri4.png">
+                            <img alt="" />
                         </div>
                         <div class="gallery-caption">
-                            <h4>Waterfall Exploration</h4>
-                            <p>Jelajahi keindahan alam virtual</p>
+                            <h4></h4>
+                            <p></p>
                         </div>
                     </div>
 
                     <!-- Gallery Item 5 -->
                     <div class="gallery-item">
                         <div class="gallery-image">
-                            <img src="assets/Galeri/Galeri5.png">
+                            <img alt="" />
                         </div>
                         <div class="gallery-caption">
-                            <h4>Avatar Showcase</h4>
-                            <p>Outfit dengan gaya anime</p>
+                            <h4></h4>
+                            <p></p>
                         </div>
                     </div>
 
                     <!-- Gallery Item 6 -->
                     <div class="gallery-item">
                         <div class="gallery-image">
-                            <img src="assets/Galeri/Galeri6.png">
+                            <img alt="" />
                         </div>
                         <div class="gallery-caption">
-                            <h4>Race Event</h4>
-                            <p>Juara dalam kompetisi balap</p>
+                            <h4></h4>
+                            <p></p>
                         </div>
                     </div>
                 </div>
 
-                <button class="gallery-nav gallery-nav-next" onclick="scrollGallery(1)">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="19" fill="black" stroke="white" stroke-width="2"/>
-                        <path d="M16 14L24 20L16 26" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <!-- Tombol kiri -->
+                <button class="gallery-nav gallery-nav-prev">
+                    <img src="assets/Left_Arrow.svg" alt="Previous" />
+                </button>
+
+                <!-- Tombol kanan -->
+                <button class="gallery-nav gallery-nav-next">
+                    <img src="assets/Right_Arrow.svg" alt="Next" />
                 </button>
             </div>
         </div>
@@ -134,7 +135,7 @@
             <div class="footer-content">
                 <div class="footer-left">
                     <div class="footer-logo">
-                        <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja">
+                        <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja" />
                     </div>
                     <div class="footer-brand">
                         <span class="brand-text">Robloxin</span>
@@ -160,28 +161,45 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Robloxin Aja. Semua hak cipta dan merek dagang terkait Roblox adalah milik Roblox Corporation. Konten pada website ini digunakan hanya untuk tujuan pembelajaran.</p>
+                <p>
+                    © 2025 Robloxin Aja. Semua hak cipta dan merek dagang terkait Roblox
+                    adalah milik Roblox Corporation. Konten pada website ini digunakan
+                    hanya untuk tujuan pembelajaran.
+                </p>
             </div>
         </div>
     </footer>
 
-<!-- Sidebar -->
-<div class="sidebar-overlay"></div>
-<div class="sidebar">
-    <div class="sidebar-close">
-        <button onclick="toggleSidebar()">✕</button>
+    <!-- Sidebar -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar">
+        <div class="sidebar-close">
+            <button onclick="toggleSidebar()">✕</button>
+        </div>
+        <div class="sidebar-content">
+            <h1>Update Terbaru Roblox</h1>
+            <h2>Update Terbaru Game Fish It!</h2>
+            <ul>
+                <li>
+                    “Ancient Jungle” update — ditambahkan lokasi baru Ancient Jungle
+                    yang memungkinkan pemain menangkap ikan langka dan menemukan rahasia
+                    baru 🔥.
+                </li>
+                <li>
+                    Event Halloween akan hadir pada 19 Oktober 2025 (WIB sekitar 05:00)
+                    dengan kosmetik bertema Halloween, kapal baru, dan skin pancing
+                    eksklusif 🎃.
+                </li>
+                <li>
+                    Versi update sebelumnya menambahkan “new secret fish”, “updated
+                    quests”, dan “fresh redeem codes” 🐠.
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="sidebar-content">
-        <h1>Update Terbaru Roblox</h1>
-        <h2>Update Terbaru Game Fish It!</h2>
-        <ul>
-            <li>“Ancient Jungle” update — ditambahkan lokasi baru Ancient Jungle yang memungkinkan pemain menangkap ikan langka dan menemukan rahasia baru 🔥.</li>
-            <li>Event Halloween akan hadir pada 19 Oktober 2025 (WIB sekitar 05:00) dengan kosmetik bertema Halloween, kapal baru, dan skin pancing eksklusif 🎃.</li>
-            <li>Versi update sebelumnya menambahkan “new secret fish”, “updated quests”, dan “fresh redeem codes” 🐠.</li>
-        </ul>
-    </div>
-</div>
 
-<script src="sidebar.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/galeri_slider.js"></script>
 </body>
+
 </html>

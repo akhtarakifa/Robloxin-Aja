@@ -2,162 +2,228 @@
    KONTAK PAGE
    ================================ */
 .kontak-page {
-    padding: 3rem 0;
-    min-height: calc(100vh - 400px);
+  padding: 3rem 0;
+  min-height: calc(100vh - 400px);
 }
 
 .kontak-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
 }
 
 .kontak-info {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 3rem;
-    border-radius: 24px;
-    color: white;
-    box-shadow: var(--shadow-lg);
-    animation: fadeInLeft 0.8s ease-out;
+  background: linear-gradient(90deg, #335ffe 0%, #00a6ff 100%);
+  padding: 3rem;
+  border-radius: 24px;
+  color: white;
+  box-shadow: var(--shadow-lg);
+  animation: fadeInLeft 0.3s ease-out;
+  -webkit-animation: fadeInLeft 0.3s ease-out;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.kontak-info:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
 }
 
 @keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
 }
 
 .kontak-info h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.intro-text {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  font-size: 28px;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
 }
 
 .kontak-info p {
-    line-height: 1.8;
-    margin-bottom: 1rem;
+  line-height: 1.8;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .contact-details {
-    margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 
 .detail-intro {
-    font-weight: 600;
-    margin-bottom: 1.5rem;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
 }
 
 .detail-item {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .detail-label {
-    font-weight: 700;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: #FFD700;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
 }
 
 .detail-value {
-    font-size: 1rem;
+  font-size: 14px;
 }
 
 .detail-value a {
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
 .detail-value a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .kontak-form-wrapper {
-    background: white;
-    padding: 3rem;
-    border-radius: 24px;
-    box-shadow: var(--shadow-lg);
-    animation: fadeInRight 0.8s ease-out;
+  background: white;
+  padding: 3rem;
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+  animation: fadeInRight 0.3s ease-out;
+  -webkit-animation: fadeInRight 0.3s ease-out;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.kontak-form-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
 }
 
 @keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -o-transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
 }
 
 .kontak-form-wrapper h2 {
-    font-size: 2rem;
-    color: #667eea;
-    margin-bottom: 2rem;
-    font-weight: 700;
+  font-size: 28px;
+  color: #335ffe;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-group label {
-    display: block;
-    font-weight: 600;
-    color: #555;
-    margin-bottom: 0.5rem;
-    font-size: 1.05rem;
+  display: block;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
 }
 
-.form-group input,
+.form-group input {
+  width: 100%;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  resize: none;
+  min-height: 56px;
+  border-width: medium;
+}
+
 .form-group textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid #e0e7ff;
-    border-radius: 12px;
-    font-family: 'Satoshi Variable';
-    font-size: 1rem;
-    transition: all 0.3s ease;
+  width: 100%;
+  padding: 1rem;
+  font-family: "Google Sans";
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  resize: none;
+  min-height: 56px;
+  border-width: medium;
+  border-color: #000000;
 }
 
-.form-group input:focus,
+.form-group input:focus {
+  outline: none;
+  border-color: #335ffe;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
 .form-group textarea:focus {
-    outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  outline: none;
+  border-color: #335ffe;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .submit-btn {
-    width: 100%;
-    padding: 1rem 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    border-radius: 12px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow-md);
+  width: 100%;
+  padding: 1rem 2rem;
+  background: #ccc;
+  color: #777;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: not-allowed;
+  transition: all 0.3s ease;
+  box-shadow: none;
 }
 
-.submit-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-lg);
+.submit-btn.active {
+  background: linear-gradient(180deg, #335ffe 0%, #00a6ff 100%);
+  color: white;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
 }
 
-.submit-btn:active {
-    transform: translateY(0);
+.submit-btn.active:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
 }

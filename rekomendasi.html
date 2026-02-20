@@ -1,128 +1,66 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rekomendasi Game - Robloxin Aja</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/rekomendasi.css">
-    <link rel="stylesheet" href="css/sidebar.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rekomendasi - Robloxin Aja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/rekomendasi.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
 </head>
-<body>
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="container">
-        <div class="nav-left">
-            <div class="nav-logo">
-                <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja">
+
+<body class="page-rekomendasi">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja">
+                </div>
+                <div class="nav-brand">
+                    <div class="brand-text">Robloxin</div>
+                    <div class="brand-text-alt">Aja</div>
+                </div>
             </div>
-            <div class="nav-brand">
-                <div class="brand-text">Robloxin</div>
-                <div class="brand-text-alt">Aja</div>
-            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+                <li><a href="rekomendasi.html" class="nav-link active">Rekomendasi Game</a></li>
+                <li><a href="avatar.html" class="nav-link">Avatar & Item</a></li>
+                <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+                <li><a href="kontak.html" class="nav-link">Formulir Kontak</a></li>
+            </ul>
+            <button class="sidebar-toggle" onclick="toggleSidebar()">
+                <img src="assets/Roblox-Sidebar.svg" alt="Menu">
+            </button>
         </div>
-        <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link">Beranda</a></li>
-            <li><a href="tentang.html" class="nav-link">Tentang</a></li>
-            <li><a href="rekomendasi.html" class="nav-link active">Rekomendasi Game</a></li>
-            <li><a href="avatar.html" class="nav-link">Avatar & Item</a></li>
-            <li><a href="galeri.html" class="nav-link">Galeri</a></li>
-            <li><a href="kontak.html" class="nav-link">Formulir Kontak</a></li>
-        </ul>
-        <button class="sidebar-toggle" onclick="toggleSidebar()">
-            <img src="assets/Roblox-Sidebar.svg" alt="Menu">
-        </button>
-    </div>
-</nav>
+    </nav>
 
     <!-- Main Content -->
     <main class="game-page">
-        <div class="container">
-            <div class="game-hero">
-                <div class="game-visual">
-                    <div class="fish-icon">
-                        <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="100" cy="75" rx="60" ry="35" fill="#4A9FFF" opacity="0.3"/>
-                            <path d="M 40 75 Q 20 60, 10 75 Q 20 90, 40 75 Z" fill="#FFB84D"/>
-                            <ellipse cx="85" cy="75" rx="45" ry="30" fill="#FFB84D"/>
-                            <circle cx="70" cy="70" r="5" fill="#000"/>
-                            <path d="M 130 60 L 160 50 L 160 70 L 150 75 L 160 80 L 160 100 L 130 90 Z" fill="#FFD700"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="game-content">
-                    <div class="game-events">
-                        <div class="event-badge admin">ADMIN FISH EVENT</div>
-                        <div class="event-badge halloween">HALLOWEEN EVENT</div>
-                    </div>
-                    
-                    <div class="event-info">
-                        <h3>CATCH EXCLUSIVE TALON SERPENT AND WILD SERPENT EVERY 4 HOURS</h3>
-                    </div>
-                    
-                    <div class="event-info">
-                        <h3>BIGGER BATTLEPASS, CANDY LEADERBOARD, +29 EVENT FISH AND NEW AREA LIMITED PUMPKIN CRATE + LIMITED SKINS</h3>
-                    </div>
 
-                    <div class="game-description">
-                        <p class="highlight">Collect from 1,000,000+ variations Fish with your friends</p>
-                        <p>Or just sail the seas and explore</p>
-                    </div>
+        <div class="game-hero">
 
-                    <div class="game-instructions">
-                        <h3>HOW DO I FISH?</h3>
-                        <div class="instruction-steps">
-                            <div class="step">
-                                <span class="step-icon">⚡</span>
-                                <p>Click to charge up</p>
-                            </div>
-                            <div class="step">
-                                <span class="step-icon">👆</span>
-                                <p>Click as fast as you can!</p>
-                            </div>
-                        </div>
-                    </div>
+            <button class="arrow arrow-left">
+                <img src="assets/Left_Arrow.svg" alt="Panah Kiri">
+            </button>
+            <button class="arrow arrow-right">
+                <img src="assets/Right_Arrow.svg" alt="Panah Kanan">
+            </button>
 
-                    <p class="game-credit">Inspired by Fisch and Fishing Simulator</p>
-                </div>
+            <!-- GAME ITEM -->
+            <div class="game-item">
+                <img class="game-image" alt="Game Image">
+                <div class="game-content"></div>
             </div>
 
-            <!-- Update Terbaru Section -->
-            <section class="updates-section">
-                <h2>Update Terbaru</h2>
-                
-                <div class="update-grid">
-                    <div class="update-card">
-                        <h3>Update Terbaru Roblox</h3>
-                        <div class="update-content">
-                            <p>Platform Roblox terus berkembang dengan fitur-fitur baru yang memukau.</p>
-                        </div>
-                    </div>
-
-                    <div class="update-card featured">
-                        <h3>Update Terbaru Game Fish It!</h3>
-                        <div class="update-content">
-                            <div class="update-item">
-                                <h4>"Ancient Jungle" update</h4>
-                                <p>Ditambahkan lokasi baru Ancient Jungle yang memungkinkan pemain menangkap ikan langka dan menemukan rahasia baru.</p>
-                            </div>
-                            
-                            <div class="update-item">
-                                <h4>Event Halloween</h4>
-                                <p>Akan hadir pada 19 Oktober 2025 (WIB sekitar 05:00) dengan kosmetik bertema Halloween, kapal baru, dan skin pancing eksklusif.</p>
-                            </div>
-                            
-                            <div class="update-item">
-                                <h4>Versi update sebelumnya</h4>
-                                <p>Menambahkan "new secret fish", "updated quests", dan "fresh redeem codes".</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        </div>
         </div>
     </main>
 
@@ -158,28 +96,36 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Robloxin Aja. Semua hak cipta dan merek dagang terkait Roblox adalah milik Roblox Corporation. Konten pada website ini digunakan hanya untuk tujuan pembelajaran.</p>
+                <p>© 2025 Robloxin Aja. Semua hak cipta dan merek dagang terkait Roblox adalah milik Roblox Corporation.
+                    Konten
+                    pada website ini digunakan hanya untuk tujuan pembelajaran.</p>
             </div>
         </div>
     </footer>
 
-<!-- Sidebar -->
-<div class="sidebar-overlay"></div>
-<div class="sidebar">
-    <div class="sidebar-close">
-        <button onclick="toggleSidebar()">✕</button>
+    <!-- Sidebar -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar">
+        <div class="sidebar-close">
+            <button onclick="toggleSidebar()">✕</button>
+        </div>
+        <div class="sidebar-content">
+            <h1>Update Terbaru Roblox</h1>
+            <h2>Update Terbaru Game Fish It!</h2>
+            <ul>
+                <li>"Ancient Jungle" update — ditambahkan lokasi baru Ancient Jungle yang memungkinkan pemain menangkap
+                    ikan
+                    langka dan menemukan rahasia baru 🔥.</li>
+                <li>Event Halloween akan hadir pada 19 Oktober 2025 (WIB sekitar 05:00) dengan kosmetik bertema
+                    Halloween, kapal
+                    baru, dan skin pancing eksklusif 🎃.</li>
+                <li>Versi update sebelumnya menambahkan "new secret fish", "updated quests", dan "fresh redeem codes"
+                    🐠.</li>
+            </ul>
+        </div>
     </div>
-    <div class="sidebar-content">
-        <h1>Update Terbaru Roblox</h1>
-        <h2>Update Terbaru Game Fish It!</h2>
-        <ul>
-            <li>“Ancient Jungle” update — ditambahkan lokasi baru Ancient Jungle yang memungkinkan pemain menangkap ikan langka dan menemukan rahasia baru 🔥.</li>
-            <li>Event Halloween akan hadir pada 19 Oktober 2025 (WIB sekitar 05:00) dengan kosmetik bertema Halloween, kapal baru, dan skin pancing eksklusif 🎃.</li>
-            <li>Versi update sebelumnya menambahkan “new secret fish”, “updated quests”, dan “fresh redeem codes” 🐠.</li>
-        </ul>
-    </div>
-</div>
-
-<script src="sidebar.js"></script>
+    <script src="js/rekomendasi_slider.js"></script>
+    <script src="js/sidebar.js"></script>
 </body>
+
 </html>

@@ -1,161 +1,224 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tentang - Robloxin Aja</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/tentang.css">
-    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/tentang.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
 </head>
+
 <body>
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="container">
-        <div class="nav-left">
-            <div class="nav-logo">
-                <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <img src="assets/Roblox_Icon.svg" alt="Logo Robloxin Aja">
+                </div>
+                <div class="nav-brand">
+                    <div class="brand-text">Robloxin</div>
+                    <div class="brand-text-alt">Aja</div>
+                </div>
             </div>
-            <div class="nav-brand">
-                <div class="brand-text">Robloxin</div>
-                <div class="brand-text-alt">Aja</div>
-            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="tentang.html" class="nav-link active">Tentang</a></li>
+                <li><a href="rekomendasi.html" class="nav-link">Rekomendasi Game</a></li>
+                <li><a href="avatar.html" class="nav-link">Avatar & Item</a></li>
+                <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+                <li><a href="kontak.html" class="nav-link">Formulir Kontak</a></li>
+            </ul>
+            <button class="sidebar-toggle" onclick="toggleSidebar()">
+                <img src="assets/Roblox-Sidebar.svg" alt="Menu">
+            </button>
         </div>
-        <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link">Beranda</a></li>
-            <li><a href="tentang.html" class="nav-link active">Tentang</a></li>
-            <li><a href="rekomendasi.html" class="nav-link">Rekomendasi Game</a></li>
-            <li><a href="avatar.html" class="nav-link">Avatar & Item</a></li>
-            <li><a href="galeri.html" class="nav-link">Galeri</a></li>
-            <li><a href="kontak.html" class="nav-link">Formulir Kontak</a></li>
-        </ul>
-        <button class="sidebar-toggle" onclick="toggleSidebar()">
-            <img src="assets/Roblox-Sidebar.svg" alt="Menu">
-        </button>
-    </div>
-</nav>
+    </nav>
 
     <!-- Main Content -->
     <main class="content-page">
         <div class="container">
             <!-- Apa itu Roblox -->
-            <section class="about-section">
-                <h2>Apa itu Roblox?</h2>
-                <div class="founders">
-                    <div class="founder-card">
-                        <div class="founder-avatar">DC</div>
-                        <p class="founder-name">David<br>Baszucki</p>
-                    </div>
-                    <div class="founder-card">
-                        <div class="founder-avatar">EC</div>
-                        <p class="founder-name">Erik<br>Cassel</p>
+            <section class="about-section hero-grid">
+                <div class="about-text">
+                    <h2>Apa itu <span style="color: #335FFE; font-weight: bold;">Roblox</span>?</h2>
+                    <p class="justify-text"><strong>Roblox adalah platform permainan daring (online) yang memungkinkan
+                            pengguna
+                            untuk membuat, memainkan, dan membagikan game buatan sendiri.</strong><br>
+                        Berbeda dengan game biasa, Roblox memberi kebebasan kepada pemain untuk menjadi kreator dan
+                        membangun dunia
+                        virtual mereka sendiri.<br>
+                        Platform ini dibuat oleh <strong>David Baszucki</strong> dan <strong>Erik Cassel</strong>, lalu
+                        resmi
+                        dirilis pada tahun 2006 oleh perusahaan <span style="color: #335FFE; font-weight: 600;">Roblox
+                            Corporation</span> yang berbasis di San Mateo, California, Amerika Serikat.<br>
+                        Nama Roblox berasal dari gabungan kata “<span
+                            style="color: #335FFE; font-weight: 600;">robots</span>” dan
+                        “<span style="color: #335FFE; font-weight: 600;">blocks</span>”, yang menggambarkan konsep dunia
+                        virtual
+                        berbentuk blok di mana pemain dapat berkreasi tanpa batas.
+
+                    <div class="sejarah-singkat">
+                        <h2>Sejarah Singkat Roblox</h2>
+                        <ul>
+                            <li><strong>2004:</strong> David Baszucki dan Erik Cassel mulai mengembangkan Roblox dengan
+                                nama awal
+                                DynaBlocks.</li>
+                            <li><strong>2005:</strong> Nama <span
+                                    style="color: #335FFE; font-weight: 600;">DynaBlocks</span> diganti
+                                menjadi <span style="color: #335FFE; font-weight: 600;">Roblox</span>, dan versi uji
+                                coba (beta) mulai
+                                diperkenalkan.</li>
+                            <li><strong>2006:</strong> Roblox resmi diluncurkan ke publik dengan tampilan sederhana dan
+                                jumlah
+                                permainan yang masih sedikit.</li>
+                            <li><strong>2011:</strong> Roblox mulai populer di kalangan anak-anak dan remaja karena
+                                mudah dimainkan
+                                serta bisa diakses di berbagai perangkat.</li>
+                            <li><strong>2013–2015:</strong> <span style="color: #335FFE; font-weight: 600;">Roblox
+                                    Studio</span>
+                                mengalami pembaruan besar dengan bahasa pemrograman <span
+                                    style="color: #335FFE; font-weight: 600;">Lua</span>, sehingga pemain bisa membuat
+                                game yang lebih
+                                interaktif.</li>
+                            <li><strong>2018:</strong> Jumlah pemain aktif Roblox mencapai lebih dari <span
+                                    style="color: #335FFE; font-weight: 600;">70 juta pengguna</span> di seluruh dunia.
+                            </li>
+                            <li><strong>2020–sekarang:</strong> Roblox menjadi salah satu platform game terbesar di
+                                dunia dengan lebih
+                                dari <span style="color: #335FFE; font-weight: 600;">200 juta pengguna aktif setiap
+                                    bulan</span>.</li>
+                        </ul>
                     </div>
                 </div>
-                <p>Roblox adalah platform permainan daring (online) yang memungkinkan pengguna untuk membuat, memainkan, dan membagikan game buatan sendiri.</p>
-                <p>Berbeda dengan game biasa, Roblox memberi kebebasan kepada pemain untuk menjadi kreator dan membangun dunia virtual mereka sendiri.</p>
-                <p>Platform ini dibuat oleh David Baszucki dan Erik Cassel, lalu resmi dirilis pada tahun 2006 oleh perusahaan <strong>Roblox Corporation</strong> yang berbasis di San Mateo, California, Amerika Serikat.</p>
-                <p>Nama Roblox berasal dari gabungan kata "<strong>robots</strong>" dan "<strong>blocks</strong>", yang menggambarkan konsep dunia virtual berbentuk blok di mana pemain dapat berkreasi tanpa batas.</p>
-            </section>
 
-            <!-- Sejarah Singkat Roblox -->
-            <section class="about-section">
-                <h2>Sejarah Singkat Roblox</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-year">2004</div>
-                        <p>David Baszucki dan Erik Cassel mulai mengembangkan Roblox dengan nama awal DynaBlocks.</p>
+                <div class="founder-visual">
+                    <div class="founder-big">
+                        <div class="blue-circle d1"></div>
+                        <img src="assets/tentang/David_Baszucki.webp" class="founder-img p1">
+                        <h1 class="founder-name n1">David<br>Baszucki</h1>
+                        <h1 class="founder-name n3">David<br>Baszucki</h1>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2005</div>
-                        <p>Nama diganti menjadi <strong>DynaBlocks Roblox</strong>, dan versi uji coba (beta) mulai diperkenalkan.</p>
+                    <div class="founder-big">
+                        <div class="blue-circle d2"></div>
+                        <img src="assets/tentang/Erik_Cassel.webp" class="founder-img p2">
+                        <h1 class="founder-name n2">Erik<br>Cassel</h1>
+                        <h1 class="founder-name n4">Erik<br>Cassel</h1>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2006</div>
-                        <p>Roblox resmi diluncurkan ke publik dengan tampilan sederhana dan jumlah permainan yang masih sedikit.</p>
+                    <div>
+                        <img src="assets/tentang/Roblox_Studio.webp" class="founder-img p3 small-img no-radius">
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2011</div>
-                        <p>Roblox mulai populer di kalangan anak anak dan remaja karena mudah dimainkan serta bisa diakses di berbagai perangkat.</p>
+                    <div>
+                        <img src="assets/tentang/Lua.webp" class="founder-img p4 small-img">
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2013–2015</div>
-                        <p><strong>Roblox Studio</strong> mengalami pembaruan besar dengan bahasa pemrograman <strong>Lua</strong>, sehingga pemain bisa membuat game yang lebih interaktif.</p>
+                    <div>
+                        <img src="assets/Roblox_Icon.svg" class="founder-img p5 small-img no-radius">
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2018</div>
-                        <p>Jumlah pemain aktif Roblox mencapai lebih dari <strong>70 juta pengguna</strong> di seluruh dunia.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2020–sekarang</div>
-                        <p>Roblox menjadi salah satu platform game terbesar di dunia dengan lebih dari <strong>200 juta pengguna aktif setiap bulan</strong>.</p>
-                    </div>
+                </div>
+
+                <div class="cara-kerja">
+                    <h2>Cara Kerja Roblox</h2>
+                    <p>
+                        Roblox bukan hanya satu permainan, tetapi kumpulan ribuan game (experience) yang dibuat oleh
+                        komunitasnya
+                        sendiri.<br>
+                        Setiap pemain dapat:
+                    </p>
+                    <p><strong>1. Membuat game</strong> menggunakan aplikasi Roblox Studio.</p>
+                    <p><strong>2. Memainkan</strong> game buatan kreator lain dari berbagai genre.</p>
+                    <p><strong>3. Berinteraksi</strong> dengan pemain lain melalui fitur obrolan, komunitas, dan acara
+                        virtual.
+                    </p>
+                    <p>Game di Roblox dibuat menggunakan bahasa <span
+                            style="color: #335FFE; font-weight: 600;">Lua</span>, yang
+                        sederhana dan cocok bagi pemula yang ingin belajar membuat game sendiri.</p>
                 </div>
             </section>
 
-            <!-- Cara Kerja Roblox -->
-            <section class="about-section">
-                <h2>Cara Kerja Roblox</h2>
-                <p>Roblox bukan hanya satu permainan, tetapi kumpulan ribuan game (experience) yang dibuat oleh komunitasnya sendiri.</p>
-                <p><strong>Setiap pemain dapat:</strong></p>
-                <ul class="feature-list">
-                    <li>Membuat game menggunakan aplikasi Roblox Studio.</li>
-                    <li>Memainkan game buatan kreator lain dari berbagai genre.</li>
-                    <li>Berinteraksi dengan pemain lain melalui fitur obrolan, komunitas, dan acara virtual.</li>
-                </ul>
-                <p>Game di Roblox dibuat menggunakan bahasa <strong>Lua</strong>, yang sederhana dan cocok bagi pemula yang ingin belajar membuat game sendiri.</p>
-            </section>
+            <section class="about-section grid-2">
+                <!-- KOLOM KIRI (GAMBAR) -->
+                <div class="rdc-visual">
+                    <div>
+                        <img src="assets/tentang/RDC25.webp" class="rdc-img x1">
+                    </div>
+                    <div>
+                        <img src="assets/tentang/Robux_Logo_Gold.webp" class="rdc-img x2 bloxbux-img">
+                    </div>
+                    <div>
+                        <img src="assets/tentang/Roblox_Studio.webp" class="rdc-img x3 bloxbux-img">
+                    </div>
+                    <div>
+                        <img src="assets/tentang/Bloxy_Awards.webp" class="rdc-img x4 awards-img">
+                    </div>
+                </div>
 
-            <!-- Sistem Ekonomi Roblox -->
-            <section class="about-section">
-                <h2>Sistem Ekonomi Roblox</h2>
-                <p>Roblox memiliki mata uang virtual bernama <strong>Robux</strong>.</p>
-                <p><strong>Robux digunakan untuk:</strong></p>
-                <ul class="feature-list">
-                    <li>Membeli pakaian, topi, dan aksesori untuk avatar.</li>
-                    <li>Membayar gamepass atau produk dalam game.</li>
-                    <li>Mendukung kreator dengan membeli karya mereka.</li>
-                </ul>
-                <p>Selain itu, kreator dapat menukarkan Robux dengan uang asli melalui program <strong>Developer Exchange (DevEx)</strong>, sehingga banyak pemain yang menjadikan Roblox sebagai sumber penghasilan.</p>
-            </section>
+                <!-- KOLOM KANAN (SEMUA TEKS) -->
+                <div class="about-text">
+                    <h2>Sistem Ekonomi Roblox</h2>
+                    <p>Roblox memiliki mata uang virtual bernama <span
+                            style="color: #335FFE; font-weight: 600;">Robux</span>.</p>
 
-            <!-- Komunitas Roblox -->
-            <section class="about-section">
-                <h2>Komunitas Roblox</h2>
-                <p>Komunitas Roblox sangat besar dan kreatif.</p>
-                <p>Jutaan pemain di seluruh dunia berbagi ide, membuat proyek bersama, dan ikut serta dalam acara seperti:</p>
-                <ul class="feature-list">
-                    <li>Bloxy Awards (penghargaan bagi kreator dan game terbaik),</li>
-                    <li>Roblox Developer Conference (RDC),</li>
-                    <li>serta berbagai event virtual dalam game.</li>
-                </ul>
-                <p>Roblox mendorong pemainnya untuk saling mendukung dan menciptakan lingkungan bermain yang positif.</p>
-            </section>
+                    <ul>
+                        <li>Membeli pakaian dan aksesori avatar</li>
+                        <li>Membayar gamepass atau item dalam game</li>
+                        <li>Mendukung kreator dengan membeli karya mereka.</li>
+                    </ul>
+                    <p>Selain itu, kreator dapat menukarkan Robux dengan uang asli melalui program <span
+                            style="color: #335FFE; font-weight: 600;">Developer Exchange (DevEx)</span>, sehingga banyak
+                        pemain yang
+                        menjadikan Roblox sebagai sumber penghasilan.</p>
 
-            <!-- Roblox untuk Pembelajaran -->
-            <section class="about-section">
-                <h2>Roblox untuk Pembelajaran</h2>
-                <p>Selain sebagai hiburan, Roblox juga digunakan dalam dunia pendidikan.</p>
-                <p>Banyak sekolah memakai Roblox Studio untuk mengajarkan logika pemrograman, desain 3D, dan kerja sama tim.</p>
-                <p>Melalui Roblox, anak muda bisa belajar menjadi pengembang game, desainer dunia virtual, dan kreator digital.</p>
-            </section>
+                    <div class="komunitas-roblox-roblox-di">
+                        <h2>Komunitas Roblox</h2>
+                        <p>Komunitas Roblox sangat besar dan kreatif. Jutaan pemain dari seluruh dunia berbagi ide,
+                            membuat proyek
+                            bersama, dan ikut serta dalam event seperti:</p>
+                        <ul>
+                            <li><strong>Bloxy Awards</strong> (penghargaan bagi creator game terbaik)</li>
+                            <li><strong>Developer Conference (RDC).</strong></li>
+                            <li>Serta berbagai event virtual dalam game.</li>
+                        </ul>
+                        <p>Roblox mendorong pemainnya untuk saling mendukung dan menciptakan lingkungan bermain yang
+                            positif.</p>
 
-            <!-- Roblox di Indonesia -->
-            <section class="about-section">
-                <h2>Roblox di Indonesia</h2>
-                <p>Di Indonesia, Roblox memiliki jutaan pemain aktif.</p>
-                <p>Game seperti <strong>Blox Fruits</strong>, <strong>Brookhaven RP</strong>, <strong>Grow A Garden</strong>, <strong>Fish It!</strong>, dan <strong>PETAPETA</strong> menjadi favorit di kalangan pelajar. Banyak kreator asal Indonesia juga mulai dikenal di dunia internasional berkat karya mereka yang menarik dan inovatif di Roblox Studio.</p>
-            </section>
+                        <h2>Roblox untuk Pembelajaran</h2>
+                        <p>Selain sebagai hiburan, Roblox juga digunakan dalam dunia pendidikan.<br>
+                            Banyak sekolah memakai Roblox Studio untuk mengajarkan logika pemrograman, desain 3D, dan
+                            kerja sama
+                            tim.<br>
+                            Melalui Roblox, anak muda bisa belajar menjadi pengembang game, desainer dunia virtual, dan
+                            kreator
+                            digital.</p>
 
-            <!-- Kesimpulan -->
-            <section class="about-section conclusion">
-                <h2>Kesimpulan</h2>
-                <p>Roblox bukan sekadar permainan, tetapi dunia tanpa batas untuk berkreasi dan belajar.</p>
-                <p>Melalui Roblox, siapa pun bisa berimajinasi, membuat dunia sendiri, dan berbagi karya dengan jutaan pemain di seluruh dunia.</p>
+                        <h2>Roblox di Indonesia</h2>
+                        <p>Di Indonesia, Roblox memiliki jutaan pemain aktif.<br> Game seperti <span
+                                style="color: #335FFE; font-weight: 600;">Blox Fruits</span>, <span
+                                style="color: #335FFE; font-weight: 600;">Brookhaven RP</span>,<span
+                                style="color: #335FFE; font-weight: 600;">Grow A Garden</span>,<span
+                                style="color: #335FFE; font-weight: 600;">Fish It!</span>, dan <span
+                                style="color: #335FFE; font-weight: 600;">PETAPETA</span> menjadi favorit di kalangan
+                            pelajar. Banyak
+                            kreator asal Indonesia juga mulai dikenal di dunia internasional berkat karya mereka yang
+                            menarik dan
+                            inovatif di Roblox Studio.</p>
+                    </div>
+                </div>
+
+                <div class="kesimpulan">
+                    <h2>Kesimpulan</h2>
+                    <p>Roblox bukan sekadar permainan, tetapi dunia tanpa batas untuk berkreasi dan belajar.
+                        Melalui Roblox, siapa pun bisa berimajinasi, membuat dunia sendiri, dan berbagi karya dengan
+                        jutaan pemain
+                        di seluruh dunia.</p>
+                </div>
             </section>
-        </div>
     </main>
 
     <!-- Footer -->
@@ -190,28 +253,36 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Robloxin Aja. Semua hak cipta dan merek dagang terkait Roblox adalah milik Roblox Corporation. Konten pada website ini digunakan hanya untuk tujuan pembelajaran.</p>
+                <p>© 2025 Robloxin Aja. Semua hak cipta dan merek dagang terkait Roblox adalah milik Roblox Corporation.
+                    Konten
+                    pada website ini digunakan hanya untuk tujuan pembelajaran.</p>
             </div>
         </div>
     </footer>
 
-<!-- Sidebar -->
-<div class="sidebar-overlay"></div>
-<div class="sidebar">
-    <div class="sidebar-close">
-        <button onclick="toggleSidebar()">✕</button>
+    <!-- Sidebar -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar">
+        <div class="sidebar-close">
+            <button onclick="toggleSidebar()">✕</button>
+        </div>
+        <div class="sidebar-content">
+            <h1>Update Terbaru Roblox</h1>
+            <h2>Update Terbaru Game Fish It!</h2>
+            <ul>
+                <li>“Ancient Jungle” update — ditambahkan lokasi baru Ancient Jungle yang memungkinkan pemain menangkap
+                    ikan
+                    langka dan menemukan rahasia baru 🔥.</li>
+                <li>Event Halloween akan hadir pada 19 Oktober 2025 (WIB sekitar 05:00) dengan kosmetik bertema
+                    Halloween, kapal
+                    baru, dan skin pancing eksklusif 🎃.</li>
+                <li>Versi update sebelumnya menambahkan “new secret fish”, “updated quests”, dan “fresh redeem codes”
+                    🐠.</li>
+            </ul>
+        </div>
     </div>
-    <div class="sidebar-content">
-        <h1>Update Terbaru Roblox</h1>
-        <h2>Update Terbaru Game Fish It!</h2>
-        <ul>
-            <li>“Ancient Jungle” update — ditambahkan lokasi baru Ancient Jungle yang memungkinkan pemain menangkap ikan langka dan menemukan rahasia baru 🔥.</li>
-            <li>Event Halloween akan hadir pada 19 Oktober 2025 (WIB sekitar 05:00) dengan kosmetik bertema Halloween, kapal baru, dan skin pancing eksklusif 🎃.</li>
-            <li>Versi update sebelumnya menambahkan “new secret fish”, “updated quests”, dan “fresh redeem codes” 🐠.</li>
-        </ul>
-    </div>
-</div>
 
-<script src="sidebar.js"></script>
+    <script src="js/sidebar.js"></script>
 </body>
+
 </html>
