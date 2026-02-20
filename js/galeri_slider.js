@@ -10,37 +10,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const gallerySets = [
     [
       {
-        image: "assets/galeri/galeri_1/galeri_1.1.webp",
+        image: "assets/galeri/galeri_1/Galeri_1.1.webp",
         title: "Petualangan Sunset",
         description: "Momen indah di pantai Roblox",
         alt: "Galeri set 1 gambar 1",
       },
       {
-        image: "assets/galeri/galeri_1/galeri_1.2.webp",
+        image: "assets/galeri/galeri_1/Galeri_1.2.webp",
         title: "Hutan Gembala",
         description: "Pemandangan arus sungai",
         alt: "Galeri set 1 gambar 2",
       },
       {
-        image: "assets/galeri/galeri_1/galeri_1.3.webp",
+        image: "assets/galeri/galeri_1/Galeri_1.3.webp",
         title: "Goa Kegelapan",
         description: "Berburu orb",
         alt: "Galeri set 1 gambar 3",
       },
       {
-        image: "assets/galeri/galeri_1/galeri_1.4.webp",
+        image: "assets/galeri/galeri_1/Galeri_1.4.webp",
         title: "Heaven Conference",
         description: "Perjalanan ke Surga",
         alt: "Galeri set 1 gambar 4",
       },
       {
-        image: "assets/galeri/galeri_1/galeri_1.5.webp",
+        image: "assets/galeri/galeri_1/Galeri_1.5.webp",
         title: "FIre Camp",
         description: "Kemah di depan api unggun",
         alt: "Galeri set 1 gambar 5",
       },
       {
-        image: "assets/galeri/galeri_1/galeri_1.6.webp",
+        image: "assets/galeri/galeri_1/Galeri_1.6.webp",
         title: "Zona Air Terjun",
         description: "Pemandangan air terjun",
         alt: "Galeri set 1 gambar 6",
@@ -48,37 +48,37 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     [
       {
-        image: "assets/galeri/galeri_2/galeri_2.1.webp",
+        image: "assets/galeri/galeri_2/Galeri_2.1.webp",
         title: "Tantangan Balapan",
         description: "Pembalap handal",
         alt: "Galeri set 2 gambar 1",
       },
       {
-        image: "assets/galeri/galeri_2/galeri_2.2.webp",
+        image: "assets/galeri/galeri_2/Galeri_2.2.webp",
         title: "Battle Royale",
         description: "Pertempuran antar pemain",
         alt: "Galeri set 2 gambar 2",
       },
       {
-        image: "assets/galeri/galeri_2/galeri_2.3.webp",
+        image: "assets/galeri/galeri_2/Galeri_2.3.webp",
         title: "Puncak Tertinggi",
         description: "Mendaki setinggi mungkin",
         alt: "Galeri set 2 gambar 3",
       },
       {
-        image: "assets/galeri/galeri_2/galeri_2.4.webp",
+        image: "assets/galeri/galeri_2/Galeri_2.4.webp",
         title: "Pengalaman Horror ",
         description: "Mengalahkan monster pemakan manusia",
         alt: "Galeri set 2 gambar 4",
       },
       {
-        image: "assets/galeri/galeri_2/galeri_2.5.webp",
+        image: "assets/galeri/galeri_2/Galeri_2.5.webp",
         title: "Kios Tengah Malam",
         description: "Hanya layani manusia",
         alt: "Galeri set 2 gambar 5",
       },
       {
-        image: "assets/galeri/galeri_2/galeri_2.6.webp",
+        image: "assets/galeri/galeri_2/Galeri_2.6.webp",
         title: "Desa Terbengkalai",
         description: "Petualangan Horror Indonesia",
         alt: "Galeri set 2 gambar 6",
