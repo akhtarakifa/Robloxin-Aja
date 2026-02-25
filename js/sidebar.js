@@ -6,7 +6,6 @@ function toggleSidebar() {
   sidebar.classList.toggle("active");
   overlay.classList.toggle("active");
 
-  // Prevent body scroll when sidebar is open
   if (sidebar.classList.contains("active")) {
     document.body.style.overflow = "hidden";
   } else {
@@ -26,7 +25,6 @@ function updateFooterBackgroundLimit() {
   );
 }
 
-// Close sidebar on ESC key
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     const sidebar = document.querySelector(".sidebar");

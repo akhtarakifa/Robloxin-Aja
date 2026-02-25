@@ -128,8 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
     index = (index + 1) % slides.length;
     renderSlide();
   });
-  // Keep arrows from causing the card to lift when hovered: toggle a class
-  // on the card so CSS can disable the lift effect.
+
   function lockCardOnArrowHover(el) {
     el.addEventListener('mouseenter', () => gameHero && gameHero.classList.add('no-lift'));
     el.addEventListener('mouseleave', () => gameHero && gameHero.classList.remove('no-lift'));
@@ -137,8 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
   lockCardOnArrowHover(prev);
   lockCardOnArrowHover(next);
 
-  // Measure the height of the first rendered slide and lock the card height
-  // so all slides use the same height. We only measure once (first slide).
   function setFirstSlideHeight() {
     if (firstSlideMeasured || !gameHero) return;
     const measure = () => {
@@ -149,15 +146,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
     if (img.complete) {
-      // image already loaded
       measure();
     } else {
       img.addEventListener('load', measure);
     }
-    // extra fallback measurement after fonts/layout settle
     setTimeout(measure, 250);
   }
 
-  renderSlide(); // slide pertama
+  renderSlide();
   setFirstSlideHeight();
 });

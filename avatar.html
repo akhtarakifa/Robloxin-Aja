@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avatar & Item - Robloxin Aja</title>
+    <link rel="icon" href="assets/Roblox_Icon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,12 +32,8 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Beranda</a></li>
                 <li><a href="tentang.html" class="nav-link">Tentang</a></li>
-                <li>
-                    <a href="rekomendasi.html" class="nav-link">Rekomendasi Game</a>
-                </li>
-                <li>
-                    <a href="avatar.html" class="nav-link active">Avatar & Item</a>
-                </li>
+                <li><a href="rekomendasi.html" class="nav-link">Rekomendasi Game</a></li>
+                <li><a href="avatar.html" class="nav-link active">Avatar & Item</a></li>
                 <li><a href="galeri.html" class="nav-link">Galeri</a></li>
                 <li><a href="kontak.html" class="nav-link">Formulir Kontak</a></li>
             </ul>
@@ -46,21 +43,24 @@
         </div>
     </nav>
 
+    <!-- Main Content -->
     <main class="avatar-page">
         <div class="avatar-nav-layout">
             <button class="avatar-arrow avatar-arrow-left" type="button" aria-label="Avatar sebelumnya">
                 <img src="assets/Left_Arrow.svg" alt="" />
             </button>
+            <button class="avatar-arrow avatar-arrow-right" type="button" aria-label="Avatar berikutnya">
+                <img src="assets/Right_Arrow.svg" alt="" />
+            </button>
 
             <div class="avatar-layout">
-                <!-- AVATAR CARD -->
+                <!-- Left Card -->
                 <div class="card avatar-card">
                     <img class="avatar-img" id="avatar-main-img" alt="Avatar Banoe" />
-
                     <p class="desc" id="avatar-desc"></p>
                 </div>
 
-                <!-- RIGHT SIDE ITEMS -->
+                <!-- Right Card -->
                 <div class="right-items">
                     <!-- GROUP 1 -->
                     <div class="card item-group">
@@ -89,10 +89,6 @@
                     </div>
                 </div>
             </div>
-
-            <button class="avatar-arrow avatar-arrow-right" type="button" aria-label="Avatar berikutnya">
-                <img src="assets/Right_Arrow.svg" alt="" />
-            </button>
         </div>
     </main>
 

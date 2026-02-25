@@ -1,6 +1,3 @@
-/* ================================
-GAME PAGE - FIXED TO MATCH FIGMA
-================================ */
 .game-page {
   padding: 3rem 0;
   min-height: calc(100vh - 400px);
@@ -31,7 +28,6 @@ GAME PAGE - FIXED TO MATCH FIGMA
   -o-transform: translateY(-5px);
 }
 
-/* Page entrance animation (only on rekomendasi.html via body.page-rekomendasi) */
 .page-rekomendasi .game-hero {
   animation: fadeInUp 0.3s ease-out;
   -webkit-animation: fadeInUp 0.3s ease-out;
@@ -57,14 +53,11 @@ GAME PAGE - FIXED TO MATCH FIGMA
   }
 }
 
-/* When an arrow is hovered, JS will add `.no-lift` to prevent the card from
-lifting; restore original shadow/position in that case. */
 .game-hero.no-lift:hover {
   transform: none;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
-/* GAME ITEM - Gambar di atas, teks di bawah */
 .game-item {
   display: flex;
   flex-direction: column;
@@ -72,7 +65,6 @@ lifting; restore original shadow/position in that case. */
   animation: fadeInUp 0.3s ease-out;
 }
 
-/* GAMBAR LEBIH BESAR SESUAI MOCKUP PERTAMA */
 .game-image {
   width: 100%;
   max-width: 1000px;
@@ -81,9 +73,6 @@ lifting; restore original shadow/position in that case. */
   border-radius: 12px;
 }
 
-
-
-/* GAME CONTENT (teks description) */
 .game-content {
   width: 100%;
   max-width: 900px;
@@ -103,30 +92,6 @@ lifting; restore original shadow/position in that case. */
   font-size: 16px;
   line-height: 1.3;
   margin-top: 0.8rem;
-}
-
-
-/* UPDATES SECTION - DIHAPUS/DISEMBUNYIKAN */
-.updates-section {
-  display: none;/
-}
-
-/* ================================
-RESPONSIVE - MOBILE
-================================ */
-@media (max-width: 900px) {
-  .game-hero {
-    padding: 2rem;
-  }
-
-  .game-image {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .update-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .game-hero {
@@ -168,10 +133,6 @@ RESPONSIVE - MOBILE
   right: -100px;
 }
 
-/* Keep arrows visually in place when the card rises on hover by counteracting
-the parent's translateY(-5px). Only apply this when the card is hovered AND
-no arrow is hovered — this prevents both arrows moving when one arrow is
-hovered (uses :has; JS fallback already toggles `.no-lift`). */
 .game-hero:hover:not(:has(.arrow:hover)) .arrow {
   transform: translateY(calc(-50% + 5px));
   -webkit-transform: translateY(calc(-50% + 5px));
@@ -180,7 +141,6 @@ hovered (uses :has; JS fallback already toggles `.no-lift`). */
   -o-transform: translateY(calc(-50% + 5px));
 }
 
-/* Normal arrow hover: scale the hovered arrow. */
 .arrow:hover {
   transform: translateY(-50%) scale(1.1);
   -webkit-transform: translateY(-50%) scale(1.1);
@@ -189,12 +149,28 @@ hovered (uses :has; JS fallback already toggles `.no-lift`). */
   -o-transform: translateY(-50%) scale(1.1);
 }
 
-/* When card is hovered and no arrow is hovered, combine lift-counteraction
-with arrow hover scaling (keeps consistent transform). */
 .game-hero:hover:not(:has(.arrow:hover)) .arrow:hover {
   transform: translateY(calc(-50% + 5px)) scale(1.1);
   -webkit-transform: translateY(calc(-50% + 5px)) scale(1.1);
   -moz-transform: translateY(calc(-50% + 5px)) scale(1.1);
   -ms-transform: translateY(calc(-50% + 5px)) scale(1.1);
   -o-transform: translateY(calc(-50% + 5px)) scale(1.1);
+}
+
+/* =======
+RESPONSIVE
+========== */
+@media (max-width: 900px) {
+  .game-hero {
+    padding: 2rem;
+  }
+
+  .game-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .update-grid {
+    grid-template-columns: 1fr;
+  }
 }

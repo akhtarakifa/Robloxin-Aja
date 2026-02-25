@@ -1,6 +1,3 @@
-/* ================================
-   RESET & BASE STYLES
-   ================================ */
 * {
   margin: 0;
   padding: 0;
@@ -67,9 +64,9 @@ body::before {
   padding: 0 auto;
 }
 
-/* ================================
+/* ==========
    NAVIGATION
-   ================================ */
+   ==========*/
 .navbar {
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
@@ -219,9 +216,9 @@ body::before {
   -o-transform: translateY(0);
 }
 
-/* ================================
+/* ======
    FOOTER
-   ================================ */
+   ======*/
 .footer {
   background: #000000;
   color: var(--text-light);
@@ -344,77 +341,3 @@ body::before {
   padding-bottom: 1rem;
 }
 
-/* ================================
-   RESPONSIVE
-   ================================ */
-@media (max-width: 968px) {
-  .nav-menu {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .hero-content,
-  .game-hero,
-  .avatar-card,
-  .kontak-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .update-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .footer-left,
-  .footer-center,
-  .footer-right {
-    align-items: center;
-  }
-
-  .footer-team ul {
-    text-align: center;
-  }
-
-  .hero-title {
-    font-size: 3rem;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .nav-menu {
-    font-size: 16px;
-    font-weight: 700;
-    gap: 0.5rem;
-  }
-
-  .nav-link {
-    padding: rem 0.8rem;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .page-title {
-    font-size: 2rem;
-  }
-
-  .instruction-steps {
-    grid-template-columns: 1fr;
-  }
-
-  .tips-grid,
-  .items-grid {
-    grid-template-columns: 1fr;
-  }
-}

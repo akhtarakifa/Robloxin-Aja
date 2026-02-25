@@ -1,6 +1,3 @@
-/* ================================
-   HERO SECTION - BERANDA
-   ================================ */
 .hero {
   padding: 4rem 0 2rem 0;
   min-height: 70vh;
@@ -24,19 +21,9 @@
   font-weight: bold;
 }
 
-.brand-title {
-  color: #000000;
-  font-weight: 400;
-}
-
 .brand-title-alt {
   color: #335ffe;
   font-weight: bold;
-}
-
-.hero-welcome {
-  display: none;
-  /* Sembunyikan kotak welcome */
 }
 
 .hero-description {
@@ -47,12 +34,6 @@
   text-align: center;
 }
 
-.hero-description strong {
-  color: #335ffe;
-  font-weight: 600;
-}
-
-/* Jika ingin link bisa diklik */
 .hero-description a {
   color: #335ffe;
   text-decoration: none;
@@ -83,8 +64,7 @@
     font-size: 2.5rem;
   }
 
-  .hero-description,
-  .hero-guide {
+  .hero-description {
     font-size: 0.95rem;
   }
 }
@@ -98,8 +78,7 @@
     font-size: 2rem;
   }
 
-  .hero-description,
-  .hero-guide {
+  .hero-description {
     font-size: 0.9rem;
   }
 }

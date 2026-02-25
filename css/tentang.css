@@ -1,14 +1,8 @@
-/* ================================
-   CONTENT PAGE LAYOUT
-================================ */
 .content-page {
   padding: 3rem 0;
   min-height: calc(100vh - 400px);
 }
 
-/* ================================
-   SECTION CARD
-================================ */
 .about-section {
   background: #ffffff;
   padding: 2.5rem;
@@ -30,7 +24,6 @@
   -o-transform: translateY(-4px);
 }
 
-/* Heading */
 .about-section h2 {
   color: #000;
   font-size: 32px;
@@ -38,8 +31,6 @@
   position: relative;
   display: inline-block;
 }
-
-/* Text */
 
 .about-section p {
   font-size: 16px;
@@ -73,10 +64,6 @@
   margin-top: -2rem;
   grid-column: -1 / 1;
 }
-
-/* ================================
-   HERO GRID
-================================ */
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -85,9 +72,6 @@
   margin-bottom: 60px;
 }
 
-/* ================================
-   FOUNDER VISUAL CARD
-================================ */
 .founder-visual {
   background:
     radial-gradient(circle 520px at top right, #335ffe, transparent 70%),
@@ -99,12 +83,10 @@
   position: relative;
   height: 778px;
 
-  /* tiap founder jadi kanvas kecil */
   .founder-big {
     position: relative;
   }
 
-  /* Lingkaran biru */
   .blue-circle {
     position: absolute;
     width: 248px;
@@ -114,7 +96,6 @@
     z-index: 2;
   }
 
-  /* posisi lingkaran */
   .d1 {
     top: 27px;
     left: 19px;
@@ -125,7 +106,6 @@
     right: 38px;
   }
 
-  /* 🧍 Foto founder */
   .founder-img {
     position: absolute;
     width: 275px;
@@ -135,7 +115,6 @@
     z-index: 2;
   }
 
-  /* posisi foto */
   .p1 {
     top: -5px;
     left: 5px;
@@ -170,7 +149,6 @@
     border-radius: 0;
   }
 
-  /* ✍️ Nama founder */
   .founder-name {
     position: absolute;
     font-size: 56px;
@@ -180,7 +158,6 @@
     z-index: 1;
   }
 
-  /* posisi nama */
   .n1 {
     top: 85px;
     left: 215px;
@@ -224,9 +201,6 @@
   -o-transform: translateY(-4px);
 }
 
-/* ================================
-   GRID & IMAGES
-================================ */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -235,9 +209,6 @@
   margin-bottom: 60px;
 }
 
-/* ===============================
-   RDC VISUAL CARD
-================================ */
 .rdc-visual {
   background:
     radial-gradient(circle 1040px at top, #335ffe, transparent 20%),
@@ -299,9 +270,6 @@
   -o-transform: translateY(-4px);
 }
 
-/* ================================
-   ANIMATION
-================================ */
 @keyframes fadeInUp {
   from {
     opacity: 0;
