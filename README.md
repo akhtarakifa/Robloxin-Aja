@@ -136,24 +136,12 @@ robloxin-aja/
 
 ---
 
-## 🤝 Kontribusi
-
-Kontribusi sangat terbuka! Jika kamu ingin menambahkan konten atau memperbaiki website ini:
-
-1. Fork repository ini
-2. Buat branch baru: `git checkout -b fitur-baru`
-3. Commit perubahan: `git commit -m 'Menambahkan fitur baru'`
-4. Push ke branch: `git push origin fitur-baru`
-5. Buat Pull Request
-
----
-
 ## 📬 Kontak
 
 Punya pertanyaan atau saran? Kunjungi halaman **Formulir Kontak** di website atau hubungi melalui:
 
-- 📧 Email: *(isi dengan emailmu)*
-- 🌐 Website: *(isi dengan link websitemu)*
+- 📧 Email: *akhtarakifa57@gmail.com*
+- 🌐 Website: *https://robloxinaja.pages.dev/*
 
 ---
 
