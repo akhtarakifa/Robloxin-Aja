@@ -55,7 +55,9 @@
 }
 
 .hero-image-wrapper img {
-  width: 1080px;
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
 }
 
 /* Responsive */
@@ -67,18 +69,26 @@
   .hero-description {
     font-size: 0.95rem;
   }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
 }
 
 @media (max-width: 640px) {
   .hero {
-    padding: 3rem 0 1rem 0;
+    padding: 2rem 0 1rem 0;
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .hero-description {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
+  }
+
+  .hero-content {
+    padding: 0 0.5rem;
   }
 }

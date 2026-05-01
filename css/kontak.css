@@ -224,3 +224,72 @@
   -ms-transform: translateY(-3px);
   -o-transform: translateY(-3px);
 }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .kontak-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .kontak-page {
+    padding: 2rem 0;
+  }
+
+  .kontak-info,
+  .kontak-form-wrapper {
+    padding: 2rem;
+  }
+
+  .kontak-info h1,
+  .kontak-form-wrapper h2 {
+    font-size: 24px;
+  }
+
+  .detail-label {
+    font-size: 14px;
+  }
+
+  .detail-value {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kontak-page {
+    padding: 1.5rem 0;
+  }
+
+  .kontak-info,
+  .kontak-form-wrapper {
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .kontak-info h1,
+  .kontak-form-wrapper h2 {
+    font-size: 20px;
+  }
+
+  .kontak-info p,
+  .detail-intro,
+  .detail-value {
+    font-size: 13px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 13px;
+    padding: 0.875rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+  }
+}

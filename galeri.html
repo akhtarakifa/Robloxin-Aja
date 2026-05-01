@@ -36,9 +36,16 @@
                 <li><a href="avatar.html" class="nav-link">Avatar & Item</a></li>
                 <li><a href="galeri.html" class="nav-link active">Galeri</a></li>
                 <li><a href="kontak.html" class="nav-link">Formulir Kontak</a></li></ul>
-            <button class="sidebar-toggle" onclick="toggleSidebar()">
-                <img src="assets/Roblox-Sidebar.svg" alt="Menu" />
-            </button>
+            <div class="nav-right">
+                <div class="hamburger-menu" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button class="sidebar-toggle" onclick="toggleSidebar()">
+                    <img src="assets/Roblox-Sidebar.svg" alt="Menu" />
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -168,8 +175,24 @@
         </div>
     </footer>
 
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+    <div class="mobile-nav-menu">
+        <div class="mobile-nav-close">
+            <button onclick="toggleMobileMenu()">?</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="nav-link">Beranda</a></li>
+            <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+            <li><a href="rekomendasi.html" class="nav-link">Rekomendasi Game</a></li>
+            <li><a href="avatar.html" class="nav-link">Avatar & Item</a></li>
+            <li><a href="galeri.html" class="nav-link active">Galeri</a></li>
+            <li><a href="kontak.html" class="nav-link">Formulir Kontak</a></li>
+        </ul>
+    </div>
+
     <!-- Sidebar -->
-    <div class="sidebar-overlay"></div>
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
     <div class="sidebar">
         <div class="sidebar-close">
             <button onclick="toggleSidebar()">✕</button>
